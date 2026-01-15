@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-big-calendar/lib/css/react-big-calendar.css';
+
+body {
+  @apply bg-dark;
+}
+
+.rbc-calendar {
+  @apply bg-dark-card text-gray-100;
+}
+
+.rbc-header {
+  @apply bg-dark-lighter text-gray-100 border-gray-700;
+}
+
+.rbc-today {
+  @apply bg-primary/20;
+}
+
+.rbc-event {
+  @apply bg-primary;
+}
+
+.rbc-off-range-bg {
+  @apply bg-dark;
+}
+
+.rbc-month-view, .rbc-time-view {
+  @apply bg-dark-card border-gray-700;
+}
+
+.rbc-day-bg, .rbc-time-slot {
+  @apply border-gray-700;
+}
+
+.rbc-toolbar {
+  @apply mb-4 flex flex-wrap items-center justify-between;
+}
+
+.rbc-toolbar button {
+  @apply bg-dark-lighter text-white px-4 py-2 rounded-lg border border-gray-700 hover:bg-primary hover:border-primary transition duration-200;
+  cursor: pointer;
+}
+
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  @apply bg-primary border-primary;
+}
+
+.rbc-toolbar-label {
+  @apply text-white text-xl font-semibold;
+}
